@@ -1,0 +1,26 @@
+[package]
+name = "boost_dll"
+description = "Boost C++ library boost_dll packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_dll"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_dll"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_filesystem = { version = "0.1.0", path = "../boost_filesystem" }
+boost_predef = { version = "0.1.0", path = "../boost_predef" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+boost_system = { version = "0.1.0", path = "../boost_system" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_type_index = { version = "0.1.0", path = "../boost_type_index" }
+boost_winapi = { version = "0.1.0", path = "../boost_winapi" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
